@@ -1,0 +1,8 @@
+#!/usr/bin/env python3
+"""next wort"""
+from pymongo import MongoClient
+
+client = MongoClient("mongodb://localhost:27017/")  # Replace with your connection URI if needed
+databases = client.list_database_names()
+
+print("Databases:", databases)
